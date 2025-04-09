@@ -91,21 +91,23 @@ const App = () => {
   );
 
   const handleAddFighter = (fighter) => {
-    console.log(fighter);
-    setTeam([...team, fighter]);
-    // console.log(team);
-    const clonedFighters = [...zombieFighters];
-    // console.log(fighter.id);
-    const index = fighter.id - 1;
-    // console.log(index);
-    clonedFighters.splice(index, index);
-    // console.log(clonedFighters);
-    if (fighter.price > money){
-      console.log("Not enough money.")
+    // check if afford
+    if (fighter.zombieFighter.price > money){
+      return console.log("Not enough money.");
     } else {
-      const newMoney = money - fighter.price;
-      // console.log(newMoney);
+      const newMoney = money - fighter.zombieFighter.price;
+      setMoney(newMoney);
     }
+
+    // add fighter to team
+    team.push(fighter.zombieFighter);
+    setTeam(team);
+
+    //remove fighter from zombieFighters
+    const clonedFighters = [...zombieFighters];
+    const index = zombieFighters.indexOf(fighter.zombieFighter);
+    clonedFighters.splice(index, 1);
+    setZombieFighters(clonedFighters);
     }
 
   return (
