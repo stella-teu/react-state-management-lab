@@ -95,24 +95,51 @@ const App = () => {
     if (fighter.zombieFighter.price > money){
       return console.log("Not enough money.");
     } else {
-      const newMoney = money - fighter.zombieFighter.price;
-      setMoney(newMoney);
+      setMoney(money - fighter.zombieFighter.price);
     }
-
-    // add fighter to team
-    team.push(fighter.zombieFighter);
-    setTeam(team);
-
-    //remove fighter from zombieFighters
+    setTeam([...team, fighter.zombieFighter]);
     const clonedFighters = [...zombieFighters];
     const index = zombieFighters.indexOf(fighter.zombieFighter);
     clonedFighters.splice(index, 1);
     setZombieFighters(clonedFighters);
     }
 
+    let totalStrength = 0;
+    team.forEach( (fighter) => {
+      totalStrength += fighter.strength;
+    })
+
+    let totalAgility = 0;
+    team.forEach( (fighter) => {
+      totalAgility += fighter.agility;
+    })
+
+    const handleRemoveFighter = (fighter) => {
+      const index = team.indexOf(fighter.fighter);
+      team.splice(index, 1);
+      setTeam(team);
+      setZombieFighters([...zombieFighters, fighter.fighter]);
+      setMoney(money + fighter.fighter.price);
+    }
+
   return (
     <>
+    <h1>Zombie Fighters</h1>
     <h2>Money: {money}</h2>
+    <h2>Team Strength: {totalStrength}</h2>
+    <h2>Team Agility: {totalAgility}</h2>
+    <h2>Team</h2>
+    <ul>{team.length === 0 ? "Pick Some team members" : team.map( (fighter) => {
+      return <li key={fighter.id}>
+      <img src={fighter.img} />
+      <h3>{fighter.name}</h3>
+      <p>Price: {fighter.price}</p>
+      <p>Strength: {fighter.strength}</p>
+      <p>Agility: {fighter.agility}</p>
+      <button onClick={() => handleRemoveFighter({fighter})}>Remove</button>
+      </li>
+    })}</ul>
+    <h2>Fighters</h2>
     <ul>
     {zombieFighters.map( (zombieFighter) => {
         return <li key={zombieFighter.id}>
