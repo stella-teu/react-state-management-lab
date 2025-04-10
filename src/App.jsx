@@ -12,7 +12,7 @@ const App = () => {
         price: 12,
         strength: 6,
         agility: 4,
-        img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/0c2d6b.png',
+        img: 'https://i.pinimg.com/474x/70/5c/7d/705c7d076a80c8c9a693cb36e8560b42.jpg',
       },
       {
         id: 2,
@@ -20,7 +20,7 @@ const App = () => {
         price: 10,
         strength: 5,
         agility: 5,
-        img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/033a16.png',
+        img: 'https://i.pinimg.com/474x/b7/e5/0f/b7e50f845325860785f07149ba29dcb3.jpg',
       },
       {
         id: 3,
@@ -28,7 +28,7 @@ const App = () => {
         price: 18,
         strength: 7,
         agility: 8,
-        img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/262c36.png',
+        img: 'https://i.pinimg.com/736x/63/14/9d/63149d4c8de40ee9e02942d45156db24.jpg',
       },
       {
         id: 4,
@@ -36,7 +36,7 @@ const App = () => {
         price: 14,
         strength: 7,
         agility: 6,
-        img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/3c1e70.png',
+        img: 'https://i.pinimg.com/474x/50/00/c1/5000c13c610cd3f0786c9085a0bf1500.jpg',
       },
       {
         id: 5,
@@ -44,7 +44,7 @@ const App = () => {
         price: 20,
         strength: 6,
         agility: 8,
-        img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/4b2900.png',
+        img: 'https://i.pinimg.com/474x/b6/72/26/b67226a90f51b93a854b063d94591e91.jpg',
       },
       {
         id: 6,
@@ -52,7 +52,7 @@ const App = () => {
         price: 15,
         strength: 5,
         agility: 7,
-        img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5a1e02.png',
+        img: 'https://i0.wp.com/suddenlycat.com/wp-content/uploads/2019/02/Doctor-Cat-Costume-03.png?fit=500%2C638&ssl=1',
       },
       {
         id: 7,
@@ -60,7 +60,7 @@ const App = () => {
         price: 16,
         strength: 6,
         agility: 5,
-        img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5e103e.png',
+        img: 'https://64.media.tumblr.com/315613893ef7286bda618355b7a443d0/706bea16232a4664-20/s1280x1920/34da33d7b17f61761ef24279a7d2b64d22677661.jpg',
       },
       {
         id: 8,
@@ -68,7 +68,7 @@ const App = () => {
         price: 11,
         strength: 8,
         agility: 3,
-        img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/67060c.png',
+        img: 'https://i.pinimg.com/474x/9c/9b/a1/9c9ba1abeb2dc30c4495d86b63ee9c95.jpg',
       },
       {
         id: 9,
@@ -76,7 +76,7 @@ const App = () => {
         price: 17,
         strength: 5,
         agility: 9,
-        img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/ac3220.png',
+        img: 'https://i.pinimg.com/474x/d5/af/b4/d5afb4cfbfb02b3e4ef47c87772111c8.jpg',
       },
       {
         id: 10,
@@ -84,7 +84,7 @@ const App = () => {
         price: 22,
         strength: 7,
         agility: 6,
-        img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/e41f26.png',
+        img: 'https://i.pinimg.com/736x/a4/66/05/a466055348a2f863516652d5f444c262.jpg',
       },
     ]
     
